@@ -1,0 +1,122 @@
+/* home */
+.back{
+  padding: 5px;
+  background-color: rgb(21, 37, 100);
+}
+.logoimg{
+  height: 70px;
+  width: 210px;
+}
+.searchbtn{
+  margin-left: 480px;
+}
+.searchh input{
+  margin-top: 10px;
+  padding: 10px 70px;
+  position: absolute;
+}
+.searchicon{
+  position: relative;
+  font-size: 20px;
+  margin-left: 420px;
+  margin-top: 16px;
+}
+.cart{
+  margin: 10px 150px;
+}
+.secpart{
+  background-color: rgb(232, 229, 229);
+}
+.filter{
+  box-shadow: 0px 0px 5px rgb(106, 103, 103);
+  background-color: rgb(252, 248, 248);
+}
+.color{
+  box-shadow: 0px 0px 3px black;
+}
+.allitem{
+  box-shadow: 0px 0px 5px rgb(106, 103, 103);
+  background-color: rgb(254, 254, 254);
+}
+.item{
+  margin: 20px;
+}
+.item img{
+  height: 250px;
+  width: 250px;
+  margin: 20px 35px;
+}
+.itemm{
+  /* box-shadow: 0px 0px 3px black; */
+  margin: 20px 10px;
+  padding: 10px 0px;
+  width: 100%;
+  /* width: 50%; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.first{
+  width: 35%;
+  box-shadow: 0px 0px 3px black;
+}
+.sec{
+  width: 60%;
+  margin-left: 20px;
+}
+.itemm img{
+  text-align: center;
+}
+.catbtn{
+  background-color: transparent;
+  border: none;
+}
+.catbtn:hover{
+  color: #ff9f00;
+}
+.ratbtn{
+  background-color: rgb(10, 151, 10);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 4px 8px;
+  margin: 5px 0px;
+}
+
+/*  */
+.allimg img{
+  box-shadow: 0px 0px 5px black;
+  margin-right: 10px;
+  padding: 5px;
+  height: 80px;
+  width: 80px;
+}
+.selected img{
+  margin-left: 25px;
+  height: 400px;
+  width: 400px;
+} 
+.addbtn{
+  margin: 20px;
+  background-color: #ff9f00;
+  padding: 15px 25px;
+  color: white;
+  border: none;
+}
+.btn2{
+  margin: 20px;
+  background-color: #fb641b;
+  padding: 15px 40px;
+  color: white;
+  border: none;
+}
+.logo2{
+  height: 30px;
+  width: 100px;
+}
+.icons{
+  height: 25px;
+  width: 25px;
+}
+.abouticon li{
+  list-style: none;
+}
