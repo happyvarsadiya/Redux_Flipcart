@@ -75,7 +75,6 @@ function About() {
                             </div>
                         )}
                         <div className='d-flex ms-2'>
-                            <button className='addbtn'><FaCartShopping></FaCartShopping> ADD TO CART</button>
                             <button className='btn2'>BUY NOW</button>
                         </div>
                     </Col>

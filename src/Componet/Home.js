@@ -7,9 +7,12 @@ import axios from 'axios';
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from 'react-router-dom';
+import { useSelector,useDispatch } from 'react-redux';
+import { cartdata } from '../App/Reducer/CartSlice';
 
 function Home() {
 
+    const dispatch = useDispatch()
 
     const [home1, sethome1] = useState([]);
     const [item, setitem] = useState([]);
@@ -60,6 +63,12 @@ function Home() {
         // setsearch("");
     };
 
+    const addcart = (item) =>{
+        // alert();
+        console.log(item);
+        dispatch(cartdata(item));
+    }
+
     return (
         <>
             <div className="back">
@@ -78,8 +87,8 @@ function Home() {
                         </Col>
                         <Col>
                             <div className='d-flex text-white cart'>
-                                <p className='ms-5 me-3 mt-1 fs-4'><FaCartShopping></FaCartShopping></p>
-                                <h2>Cart</h2>
+                            <Link to="cart"><p className='ms-5 me-3 mt-1 fs-4'><FaCartShopping></FaCartShopping><button className='increbtn'></button></p>
+                            </Link><h2>Cart</h2>
                             </div>
                         </Col>
                     </Row>
@@ -142,6 +151,9 @@ function Home() {
                                                             <h6 className='font-monospace'>"Brand:" {ele.brand}</h6>
                                                             <h6 className='font-monospace'>"category:"{ele.category}</h6>
                                                             <Button variant="primary" className='mt-2'><a href={ele.thumbnail} className="text-white" src="">Show Here</a></Button>
+                                                            <button className='addbtn'
+                                                             onClick={() => addcart(ele)}
+                                                             ><FaCartShopping></FaCartShopping> ADD TO CART</button>
                                                         </div>
 
                                                     </div>
